@@ -1,0 +1,40 @@
+button {
+  background-image: linear-gradient(#500,red);
+  position: relative;
+  overflow: hidden;
+  border-color: transparent;
+  box-sizing: border-box;
+}
+
+button:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(100% - 2px);
+  height: 50%;
+  background: linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.1));
+  z-index: 2;
+}
+
+button:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  border-width: 1px;
+  border-style: solid;
+  border-color: darkred;
+  box-sizing: border-box;
+  z-index: 2;
+}
+
+button.run {
+  background-image: linear-gradient(green,lightgreen);
+}
+button.run:after {
+  border-color: darkgreen;
+}
