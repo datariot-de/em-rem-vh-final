@@ -62,6 +62,7 @@ body {
 
 section {
   min-height: 100vh;
+  padding: 0 1rem;
 }
 
 section:nth-child(2) {
@@ -129,7 +130,7 @@ img {
 button {
   display: block;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   border-width: 0;
   border-radius: 1em;
   margin: 1em auto;
